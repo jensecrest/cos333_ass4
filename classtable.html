@@ -1,0 +1,20 @@
+<table> 
+    <tr align=left>
+        <th>ClassId</th>
+        <th>Dept</th>
+        <th>Num</th>
+        <th>Area</th>
+        <th>Title</th>
+    </tr>
+    {% for class in classes: %}
+        <tr>
+            <td><a href="regdetails?classid={{class.get_class_id()}}">
+                {{class.get_class_id()}}
+            </a></td>
+            <td>{{class.get_dept()}}</td>
+            <td>{{class.get_course_num()}}</td>
+            <td>{{class.get_area()}}</td>
+            <td>{{class.get_title()}}</td>
+        </tr>
+    {% endfor %}
+</table>

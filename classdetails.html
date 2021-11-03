@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Registrar's Office Class Details</title>
+    </head>
+    <body>
+        {% include 'header.html' %}
+        <hr>
+        {% include 'classinfo.html' %}
+        <hr>
+        {% include 'courseinfo.html' %}
+        <hr>
+
+        <p>
+        Click here to do <a href="index?dept={{search_dept}}&coursenum={{search_num}}&area={{search_area}}&title={{search_title}}">another class search</a>
+        </p>
+
+        {% include 'footer.html' %}
+    </body>
+</html>
