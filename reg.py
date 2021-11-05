@@ -48,7 +48,7 @@ def index():
 
     except sqlite3.DatabaseError as ex:
         print(str(ex), file=stderr)
-        html = render_template('error.html', error_message=
+        html = render_template('index.html', error_message=
             'A server error occurred. \
             Please contact the system administrator.')
         return make_response(html)

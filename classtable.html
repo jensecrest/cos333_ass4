@@ -1,4 +1,4 @@
-<table> 
+<table class="table table-striped"> 
     <tr align=left>
         <th>ClassId</th>
         <th>Dept</th>
@@ -8,7 +8,8 @@
     </tr>
     {% for class in classes: %}
         <tr>
-            <td><a href="regdetails?classid={{class.get_class_id()}}">
+            <td><a href="regdetails?classid={{class.get_class_id()}}"
+                target="_blank">
                 {{class.get_class_id()}}
             </a></td>
             <td>{{class.get_dept()}}</td>

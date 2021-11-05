@@ -2,16 +2,28 @@
  <html>
    <head>
       <title>Registrar's Office Class Search</title>
+
+      <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
    </head>
    <body>
-      {% include 'header.html' %}
-      <h2>
-          Class Search
-      </h2>
-      <hr>
-      {% include 'searchform.html' %}
-      <hr>
-      {% include 'classtable.html' %}
+      <div class="container-fluid"
+         style="background-color:#295078; color:white">
+         {% include 'header_cs.html' %}
+         {% include 'searchform.html' %}
+      </div>
+
+      <div class="container-fluid">
+         {% if error_message is defined %}
+            <p>{{error_message}}</p>
+         {% else %}
+            {% include 'classtable.html' %}
+         {% endif %}
+      </div>
+
+      <div class="container-fluid"
+         style="background-color:#295078; color:white">
       {% include 'footer.html' %}
+      </div>
    </body>
  </html>

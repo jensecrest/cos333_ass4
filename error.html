@@ -2,10 +2,25 @@
     <html>
     <head>
         <title>Registrar's Office Error</title>
+
+        <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     </head>
     <body>
-        {% include 'header.html' %}
-        <p>{{error_message}}</p>
-        {% include 'footer.html' %}
+        <div class="container-fluid"
+         style="background-color:#295078; color:white">
+            {% include 'header_error.html' %}
+        </div>
+        <br>
+
+        <div class="container-fluid">
+            <p>{{error_message}}</p>
+        </div>
+        <br>
+
+        <div class="container-fluid"
+        style="background-color:#295078; color:white">
+            {% include 'footer.html' %}
+        </div>  
     </body>
 </html>
