@@ -21,7 +21,15 @@ app = Flask(__name__, template_folder='.')
 @app.route('/', methods=['GET'])
 @app.route('/index', methods=['GET'])
 def index():
+    html = render_template('index.html')
+    response = make_response(html)
 
+    return response
+
+#-----------------------------------------------------------------------
+
+@app.route('/searchresults', methods=['GET'])
+def search_results():
     dept = request.args.get('dept')
     if dept is None:
         dept = ''
@@ -53,16 +61,9 @@ def index():
             Please contact the system administrator.')
         return make_response(html)
 
-    html = render_template('index.html', prev_dept=dept,
-        prev_num=number, prev_area=area, prev_title=title,
-        classes=classes)
+    html = render_template('classtable.html', classes=classes)
 
     response = make_response(html)
-
-    response.set_cookie('prev_dept', dept)
-    response.set_cookie('prev_num', number)
-    response.set_cookie('prev_area', area)
-    response.set_cookie('prev_title', title)
 
     return response
 
