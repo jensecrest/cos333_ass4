@@ -1,7 +1,9 @@
 jsecrest_agc2
 
 Jennifer Secrest, AnneMarie Caballero, Assignment 4
-_______________________________________________________________________
+
+---
+
 Jennifer Secrest's Contribution:
 
 We partner coded this entire assignment, either switching off who was
@@ -15,23 +17,38 @@ same time.
 
 AnneMarie Caballero's Contribution:
 
-TODO: FILL OUT
-
+As Jen mentioned, we partner coded the assignment, often through Zoom
+as Jen had a traael swim meet. When transforming HTML elements to
+Bootstrap, we each took turns taking the lead on coding. For example,
+I converted the searchform.html file and the class.table.html file.
+We coded the page updating together. We also did style checks
+and debugged together. The only part we did separately was
+that as Jen was travelling, we split up the work of testing.
+For example, Jen made a checklist of all of the situations to test
+for, and I ran some of those situations. However, both of us
+also contributed by running our own tests.
 
 Help received from other people:
 
-Outside of asking a few questions on Ed (TODO: and consulting the course
-staff email??), we did not receive help from other people.
+We consulted Ed (including asking a question), and also sent
+an email to the course staff. However, other than that and
+consulting the resources on the COS 333 website, we did
+not receive help from others.
 
 Sources of information:
 
-TO DO: CITE
-For Tables in Bootstrap:
+We used the information provided on the course website
+(especially the index.html file from the PennyBootstrap
+and the index.html from PennyJQuery). However, from outside
+materials, we only had two sources to cite:
+
+To find out how to create a Bootstrap striped table:
+
 - https://www.w3schools.com/bootstrap4/bootstrap_tables.asp
-For placeholders in HTML:
+  To learn how to set the placeholders in HTML:
 - https://www.w3schools.com/html/html_form_attributes.asp
 
-Time spent on the assignment: TODO FILL IN
+Time spent on the assignment: 5-8
 
 Assessment of assignment:
 
@@ -40,6 +57,10 @@ off of our last one and it was great to get the background knowledge of HTML
 and then see how much the use of Bootstrap can affect the effeciency of the
 code.
 
-AnneMarie Caballero: FILL IN
+AnneMarie Caballero: I thought this assignment was really well-done. It
+really allowed me to enhance my understanding of Bootstrap and JQuery
+without having to replicate any of the work on earlier covered topics.
+All of the assignments have built well off of each other, and I've really
+enjoyed seeing how our application has evolved over time.
 
 No known bugs.
