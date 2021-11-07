@@ -133,7 +133,7 @@ def get_classes_with_condition(condition, prepared_values):
 
             while row is not None:
                 # 0 = class id; 1, 2, 5 = course id; 3 = area;
-                # #4 = title; 6 = dept; 7 = coursenum
+                # 4 = title; 6 = dept; 7 = coursenum
                 classes.append(RegClass([str(row[0]),\
                     str(row[6]), str(row[7]), str(row[3]),\
                     str(row[4])]))
